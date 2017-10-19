@@ -113,10 +113,18 @@ body
 .section-1-index
 	padding-top: 55px
 .img-in-bg
+	position: relative
+	text-align: center
 	background: url(../../img/section-1-img.png) no-repeat center
 	background-size: 537px 380px
 	width: 537px
 	height: 380px
+	.middle
+		width: 300px
+		margin: 0 auto
+		position: absolute
+		top: 25%
+		left: 25%
 	h3
 		color: #fff
 		font: 18px $default-font
@@ -125,5 +133,12 @@ body
 		color: $accent
 		text-transform: uppercase
 		text-decoration: underline
- 
+		.line
+			height: 100px
+			width: 100px
+			background: #fff
+
+
+			
+// ===============================================
 @import "media" // Всегда в конце
