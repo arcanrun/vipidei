@@ -112,7 +112,38 @@ body
 	box-shadow: 0 0 40px 0.5px #000
 .section-1-index
 	padding-top: 55px
+	.row
+		position: relative
+	.descr-blc
+		position: absolute
+		top: 15%
+		right: 0
+		width: 750px
+		float: left
+		background: #292929
+		p
+			padding-top: 60px
+			padding-left: 80px
+			padding-right: 80px
+			font: 20px OpenSans-Light
+			color: #fff
+		a
+			display: inline-block
+			margin-left: 80px
+			margin-bottom: 45px
+			color: #fff
+			font: 14px OpenSans-Bold
+			border: 1px solid #3e3e3e
+			border-radius: 50px 
+			padding-top: 10px
+			padding-bottom: 10px
+			padding-right: 20px
+			padding-left: 20px
+
+			&:hover
+				text-decoration: none
 .img-in-bg
+	float: left
 	position: relative
 	text-align: center
 	background: url(../../img/section-1-img.png) no-repeat center
@@ -120,6 +151,7 @@ body
 	width: 537px
 	height: 380px
 	.middle
+
 		width: 300px
 		margin: 0 auto
 		position: absolute
@@ -128,17 +160,21 @@ body
 	h3
 		color: #fff
 		font: 18px $default-font
+		padding-bottom: 25px
 	a
+		display: inline-block
 		font: 36px $default-font
+		padding-top: 25px
 		color: $accent
 		text-transform: uppercase
 		text-decoration: underline
-		.line
-			height: 100px
-			width: 100px
-			background: #fff
+	.line
+		height: 1px
+		width: 85px
+		margin: 0 auto
+		background: #fff
+		opacity: .5
 
 
-			
 // ===============================================
 @import "media" // Всегда в конце
