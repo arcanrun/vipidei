@@ -1,0 +1,129 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background: #282828
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.top
+	padding-top: 15px
+	padding-bottom: 30px
+	color: $accent-3
+	font-size: 14px
+	p
+		display: inline-block
+	a
+		text-decoration: underline
+		color: $accent-3
+		&:hover
+			color: #fff
+	ul
+		margin-left: -50px
+		li
+			display: inline
+			padding: 5px 8px
+			border: 1px solid transparent
+			&:hover
+				border: 1px solid #353535
+				border-radius: 3px
+	b
+		color: $accent-2
+		font:  16px OpenSans-Bold
+	i
+		color: #77a528
+		font:  14px OpenSans
+	i.fa
+		color: #4e4e4e
+		font:  20px FontAwesome 
+.wrapper
+	background: #333333
+	box-shadow: 0px 0px 40px .5px #000
+	width: 1540px
+	margin: 0 auto
+	nav
+		padding-bottom: 30px
+		img[src*=Logo]
+			width: 113px
+			padding-top: 25px
+		ul
+			padding-top: 45px
+			li
+				text-transform: uppercase
+				padding-right: 75px
+				display: inline-block
+				&:last-child
+					padding-right: 0px
+				a
+					text-decoration: none
+					color: #fff
+					font: 18px $default-font
+					&:hover
+						color: $accent
+						text-decoration: underline
+#myCarousel
+	margin: 0 auto
+	width: 1355px
+	box-shadow: 0 0 40px 0.5px #000
+.section-1-index
+	padding-top: 55px
+.img-in-bg
+	background: url(../../img/section-1-img.png) no-repeat center
+	background-size: 537px 380px
+	width: 537px
+	height: 380px
+	h3
+		color: #fff
+		font: 18px $default-font
+	a
+		font: 36px $default-font
+		color: $accent
+		text-transform: uppercase
+		text-decoration: underline
+ 
+@import "media" // Всегда в конце
