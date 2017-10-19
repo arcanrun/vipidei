@@ -36,7 +36,7 @@ body textarea:required:valid
 
 html, body
 	height: 100%
-
+	background: #282828
 body
 	font-size: 16px
 	min-width: 320px
@@ -45,7 +45,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-	background: #282828
+
 
 .img-responsive
 	display: block
@@ -81,6 +81,9 @@ body
 	i.fa
 		color: #4e4e4e
 		font:  20px FontAwesome 
+.wrapper-2
+	width: 1360px
+	margin: 0 auto
 .wrapper
 	background: #333333
 	box-shadow: 0px 0px 40px .5px #000
@@ -111,15 +114,16 @@ body
 	width: 1355px
 	box-shadow: 0 0 40px 0.5px #000
 .section-1-index
+	padding-bottom: 60px
 	padding-top: 55px
 	.row
 		position: relative
 	.descr-blc
+
 		position: absolute
-		top: 15%
+		top: 12%
 		right: 0
-		width: 750px
-		float: left
+		width: 753px
 		background: #292929
 		p
 			padding-top: 60px
@@ -143,7 +147,6 @@ body
 			&:hover
 				text-decoration: none
 .img-in-bg
-	float: left
 	position: relative
 	text-align: center
 	background: url(../../img/section-1-img.png) no-repeat center
@@ -174,7 +177,31 @@ body
 		margin: 0 auto
 		background: #fff
 		opacity: .5
-
+footer
+	background: #282828
+	div.col-lg-5
+		ul.social
+			padding-top: 55px
+			li
+				padding-right: 0px
+				padding: 5px 8px
+				border: 1px solid transparent
+				&:hover
+					border: 1px solid #353535
+					border-radius: 3px
+				i.fa
+					color: #4e4e4e
+					font:  20px FontAwesome 
+					display: inline
+.wrapper-2
+	footer
+		img[src*=Logo]
+			padding-top: 40px
+		ul
+			padding-top: 63px
+			
+			
+			
 
 // ===============================================
 @import "media" // Всегда в конце
