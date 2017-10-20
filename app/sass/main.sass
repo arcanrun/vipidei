@@ -75,6 +75,8 @@ body
 	b
 		color: $accent-2
 		font:  16px OpenSans-Bold
+		padding-left: 5px
+		padding-right: 5px
 	i
 		color: #77a528
 		font:  14px OpenSans
@@ -422,6 +424,55 @@ footer
 				text-decoration: none
 		p
 			padding-bottom: 0px
+// =============== search.html ==============
 
+header.search
+	#custom-search-input
+		margin: 0
+		margin-top: 10px
+		padding: 0
+		.input-group
+			float: right
+			+clearfix
+	
+		.input-group-btn
+			font-size: 15px
+			i
+				position: absolute
+				top: 40px
+				padding-left: 20px
+				font-size: 30px
+				color: #fff
+		input[type=text]
+			margin-top: 40px
+			border: 1px solid #3c3c3c
+			border-radius: 2px
+			padding-left: 20px
+			color: $accent-2
+			font: 18px $default-font
+		.btn-search
+			z-index: 3
+			border: 0
+			background: none
+			/** belows styles are working good */
+			padding: 2px 5px
+			margin-top: 35px
+			position: relative
+			left: -10px
+			/* IE7-8 doesn't have border-radius, so don't indent the padding */
+			margin-bottom: 0
+			-webkit-border-radius: 3px
+			-moz-border-radius: 3px
+			border-radius: 3px
+			color: $accent
+nav.nav-top
+	border-bottom: 1px solid #444444
+	margin-bottom: 45px
+.search-res-blc
+	.body-search-res
+		h3
+			font: 20px OpenSans-Bold, $default-font
+			a
+				color: #fff
 // ===============================================
 @import "media" // Всегда в конце
