@@ -179,6 +179,26 @@ body
 		opacity: .5
 footer
 	background: #282828
+	nav
+		padding-bottom: 30px
+		img[src*=Logo]
+			width: 113px
+			padding-top: 25px
+		ul
+			padding-top: 45px
+			li
+				text-transform: uppercase
+				padding-right: 75px
+				display: inline-block
+				&:last-child
+					padding-right: 0px
+				a
+					text-decoration: none
+					color: #fff
+					font: 18px $default-font
+					&:hover
+						color: $accent
+						text-decoration: underline
 	div.col-lg-5
 		ul.social
 			padding-top: 55px
@@ -199,9 +219,35 @@ footer
 			padding-top: 40px
 		ul
 			padding-top: 63px
-			
-			
-			
-
+.section-2-index
+	h3
+		color: $accent-2
+		text-transform: uppercase
+		font: 36px PlumbBold, $default-font 
+	.nav-tabs
+		margin-top: 30px
+		float: right
+		border-bottom: none
+		margin-bottom: 10px
+		+clearfix
+		li>a
+			color: #999999
+			font: 20px PlumbRegular, $default-font
+			border: none
+			padding-top: 0px
+			padding-bottom: 0px
+		li
+			padding-left: 15px
+			padding-right: 15px
+			border-left: 1px solid  #434343 
+			&:last-child
+				border-right: 1px solid  #434343
+	.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover
+		background: none
+		color: $accent
+		border: none
+	.nav-tabs>li>a:hover
+		background: none
+		border: none
 // ===============================================
 @import "media" // Всегда в конце
