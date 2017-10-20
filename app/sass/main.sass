@@ -143,7 +143,6 @@ body
 			padding-bottom: 10px
 			padding-right: 20px
 			padding-left: 20px
-
 			&:hover
 				text-decoration: none
 .img-in-bg
@@ -249,5 +248,56 @@ footer
 	.nav-tabs>li>a:hover
 		background: none
 		border: none
+.more-blc
+	margin-top: 60px
+	position: relative
+	height: 1px
+	width: 100%
+	background: #3e3e3e
+	margin-bottom: 60px
+.more-btn
+	left: 50%
+	margin-left: -80px
+	bottom: -20px
+	background: #333333
+	position: absolute
+	display: inline-block
+	color: $accent
+	font: 14px OpenSans-Bold
+	border: 1px solid #3e3e3e
+	border-radius: 50px 
+	padding-top: 10px
+	padding-bottom: 10px
+	padding-right: 20px
+	padding-left: 20px
+	&:hover
+		color: $accent-2
+		text-decoration: none
+.tab-content
+	.row:first-child
+		margin-bottom: 25px
+	p
+		font: 20px OpenSans-Bold, $default-font
+		text-transform: uppercase
+		color: #fff
+	.col-lg-3
+		width: 20%
+	img
+		opacity: .3
+		display: inline-block
+		width: 230px
+		height: 220px
+	.mask-1
+		width: 100%
+		height: 100%
+		position: absolute
+		overflow: hidden
+		top: 0
+		left: 0
+	.mask
+		&:hover
+			p
+				transiotion: color .5s
+				color: #000
 // ===============================================
 @import "media" // Всегда в конце
