@@ -45,7 +45,11 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-
+.navbar-default
+	background-color: transparent
+	box-shadow: none
+.navbar
+	border: none
 
 .img-responsive
 	display: block
@@ -87,9 +91,10 @@ body
 	width: 1360px
 	margin: 0 auto
 .wrapper
+	margin: 0 auto
 	background: #333333
 	box-shadow: 0px 0px 40px .5px #000
-	width: 1540px
+	max-width: 1540px
 	margin: 0 auto
 	nav
 		padding-bottom: 30px
@@ -113,7 +118,7 @@ body
 						text-decoration: underline
 #myCarousel
 	margin: 0 auto
-	width: 1355px
+	max-width: 1355px
 	box-shadow: 0 0 40px 0.5px #000
 .section-1-index
 	padding-bottom: 60px
@@ -125,7 +130,7 @@ body
 		position: absolute
 		top: 12%
 		right: 0
-		width: 753px
+		max-width: 753px
 		background: #292929
 		p
 			padding-top: 60px
@@ -152,7 +157,7 @@ body
 	text-align: center
 	background: url(../../img/section-1-img.png) no-repeat center
 	background-size: 537px 380px
-	width: 537px
+	max-width: 537px
 	height: 380px
 	.middle
 
